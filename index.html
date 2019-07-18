@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+    <title>Responsive Resume/CV Template for Developers</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive HTML5 Resume/CV Template for Developers">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>     
+<style>
+    .main-wrapper .time {
+        position: absolute;
+        right: 60px;
+        top: 0;
+        color: #97AAC3;
+    }
+    .skillset .level-bar-inner{
+        background:#a94442;
+    }
+    @media (max-width: 767px){
+        .sidebar-wrapper {
+            width: 100% !important;
+        }
+
+        .main-wrapper {
+            width: 100% !important;
+        }
+    }
+</style>
+
+<body>
+    <button onclick="imprimir()" class="btn btn-success">    
+        imprimir
+    </button>
+    <div class="wrapper" id="canvas">
+        <div class="sidebar-wrapper" style="width: 30%;display: inline-block; background:#a94442;">
+           <div class="profile-container">
+            <img id="img-profile" style="width:150px;
+            height:150px;
+            border-radius:150px;" class="profile" src="assets/images/profile.jpeg" alt="" />
+            <h2 class="name">José iván Ríos Acosta</h2>
+            <h3 class="tagline">Full Stack Developer</h3>
+        </div><!--//profile-container-->
+
+        <div class="contact-container container-block">
+            <ul class="list-unstyled contact-list">
+                <li class="email"><i class="fa fa-envelope"></i><a href="mailto:joserios9605@outlook.com">joserios9605@outlook.com</a></li>
+                <li class="phone"><i class="fa fa-phone"></i><a href="tel:2211 660 150">2211 660 150</a></li>
+                <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/jos%C3%A9-iv%C3%A1n-r%C3%ADos-acosta-456833188/" target="_blank">linkedin.com/in/ivanRios</a></li>
+                <li class="github"><i class="fa fa-github"></i><a href="https://github.com/jirios2105" target="_blank">github.com/jirios2105</a></li>
+                <li class="facebook"><i class="fa fa-facebook"></i><a href="https://www.facebook.com/obediente.rios" target="_blank">obediente.rios</a></li>
+            </ul>
+        </div><!--//contact-container-->
+        <div class="education-container container-block">
+            <h2 class="container-block-title">Educación</h2>
+            <div class="item">
+                <h4 class="degree">
+                    TSU en tecnologias de la informción y
+                    comunicción. área sistemas informáticos   
+                </h4>
+                <h5 class="meta">Universidad Tecnológica de Huejotzingo</h5>
+                <div class="time">2015 - 2017</div>
+            </div><!--//item-->
+            <div class="item">
+                <h4 class="degree">Ingeneria en tecnologias de la informacxión</h4>
+                <h5 class="meta">Universidad Tecnológica de Huejotzingo</h5>
+                <div class="time">2017 - 2018</div>
+            </div><!--//item-->
+        </div><!--//education-container-->
+
+        <div class="languages-container container-block">
+            <h2 class="container-block-title">Idiomas</h2>
+            <ul class="list-unstyled interests-list">
+                <li>Español <span class="lang-desc">(Nativo)</span></li>
+                <li>Inglés <span class="lang-desc">(Básico)</span></li>
+
+            </ul>
+        </div><!--//interests-->
+
+        <div class="interests-container container-block">
+            <h2 class="container-block-title">Intereses</h2>
+            <ul class="list-unstyled interests-list">
+                <li>Basketball</li>
+                <li>Cocina</li>
+                <li>Nuevas tecnologías</li>
+            </ul>
+        </div><!--//interests-->
+    </div><!--//sidebar-wrapper-->
+
+    <div class="main-wrapper" style="width: 70%;    display: inline-block;padding-right: 10px;">
+
+         <!-- <section class="section summary-section">
+                <h2 class="section-title"><i class="fa fa-user"></i>Career Profile</h2>
+                <div class="summary">
+                    <p>Summarise your career here lorem ipsum dolor sit amet, consectetuer adipiscing elit. You can <a href="http://themes.3rdwavemedia.com/website-templates/orbit-free-resume-cv-template-for-developers/" target="_blank">download this free resume/CV template here</a>. Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu.</p>
+                </div>
+            </section>  -->           
+            <section class="section experiences-section">
+                <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiencia</h2>
+
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">Desarollador</h3>
+                            <div class="time">2018 - Presente</div>
+                        </div><!--//upper-row-->
+                        <div class="company">Oohel Technologies, Pebla, Puebla</div>
+                    </div><!--//meta-->
+                    <div class="details">
+                        <p>En esta empresa desempeñe el role de desarrollador PHP y Odoo. </p>
+                    </div><!--//details-->
+                </div><!--//item-->
+
+
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">Desarollador .NET</h3>
+                            <div class="time">2017 - 2018</div>
+                        </div><!--//upper-row-->
+                        <div class="company">Insupplytech, México, Naucalpan</div>
+                    </div><!--//meta-->
+                    <div class="details">
+                        <p>En esta empresa desempeñe el role de desarrollador .NET. </p>
+                    </div><!--//details-->
+                </div><!--//item-->
+
+
+
+
+
+
+            </section><!--//section-->
+            
+            <section class="section projects-section">
+                <h2 class="section-title"><i class="fa fa-archive"></i>Proyectos</h2>
+
+                <div class="item">
+                    <span class="project-title"><a href="#hook">Talent-Match</a></span> - <span class="project-tagline">Talent match es un proyecto personal que inicie a partir de una idea en la universidad y lo estoy trabajando en colaborción con un compañero de estudios.</span>
+
+                </div><!--//item-->
+
+            </section><!--//section-->
+            
+            <section class="skills-section section">
+                <h2 class="section-title"><i class="fa fa-rocket"></i>Habilidades &amp; Competencias</h2>
+                <div class="skillset">  
+
+                    <div class="item">
+                        <h3 class="level-title">PHP</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="70%">
+                            </div>                                      
+                        </div><!--//level-bar-->                                 
+                    </div><!--//item-->
+
+                    <div class="item">
+                        <h3 class="level-title">Javascript &amp; jQuery</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="70%">
+                            </div>                                      
+                        </div><!--//level-bar-->                                 
+                    </div><!--//item-->
+
+                    <div class="item">
+                        <h3 class="level-title">Laravel &amp; Vue JS </h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="65%">
+                            </div>                                      
+                        </div><!--//level-bar-->                                 
+                    </div><!--//item-->
+
+                    <div class="item">
+                        <h3 class="level-title">.NET</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="40%">
+                            </div>                                      
+                        </div><!--//level-bar-->                                 
+                    </div><!--//item-->
+
+
+                    <div class="item">
+                        <h3 class="level-title">Python &amp; Odoo</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="45%">
+                            </div>                                      
+                        </div><!--//level-bar-->                                 
+                    </div><!--//item-->
+
+
+
+                    <div class="item">
+                        <h3 class="level-title">HTML5 &amp; CSS</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="60%">
+                            </div>                                      
+                        </div><!--//level-bar-->                                 
+                    </div><!--//item-->
+
+                    <div class="item">
+                        <h3 class="level-title">Docker, GitHub &amp; Bitbucket</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="50%">
+                            </div>                                      
+                        </div><!--//level-bar-->                                 
+                    </div><!--//item-->
+
+                    <div class="item">
+                        <h3 class="level-title">Trello &amp; Jira</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="30%">
+                            </div>                                      
+                        </div><!--//level-bar-->                                 
+                    </div><!--//item-->
+
+
+
+                </div>  
+            </section><!--//skills-section-->
+            
+            <br><br><br>
+            <br><br><br>
+            <br><br><br>
+            <br><br><br>
+            <br><br><br>
+            
+        </div><!--//main-body-->
+
+    </div>
+    <canvas id="myCanvas"  width="240" height="297" style="display: none; border:1px solid #d3d3d3;">
+        Your browser does not support the HTML5 canvas tag.
+    </canvas>
+
+
+    <footer class="footer">
+        <div class="text-center">
+            <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+            <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>   
+
+    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js"></script>
+    <script >
+        function convertBase64(img, callback){
+
+
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+
+            ctx.drawImage(img, 10, 10);
+            
+            callback(c.toDataURL("image/png", 1.0));
+
+
+        }
+
+        function imprimir(){
+            html2canvas(document.getElementById("canvas"), { letterRendering: 1, allowTaint : true, onrendered : function (canvas) {
+                var imgWidth = 210;
+                var pageHeight = 295;
+                var imgHeight = canvas.height * imgWidth / canvas.width;
+                var heightLeft = imgHeight;
+                var imgData = canvas.toDataURL("image/jpeg", 1.0);
+                var pdf = new jsPDF();
+                var img = new Image();
+
+                img = document.getElementById("img-profile");
+
+               /* convertBase64(img, function(base64){
+*/
+
+                   // document.body.append(base64)
+
+
+
+
+                    pdf.addImage(imgData, 'jpg', 0, 0, imgWidth, imgHeight+15, undefined, 'none');
+                    //pdf.addImage(base64, 'jpg', 130,3,0,0);
+
+                    heightLeft -= pageHeight;
+
+                    while (heightLeft >= 0) {
+                        position = heightLeft - imgHeight;
+                        pdf.addPage();
+                        pdf.addImage(imgData, 'jpg', 0, position, imgWidth, imgHeight + 15, undefined, 'none');
+                        heightLeft -= pageHeight;
+                    }
+
+
+
+                    pdf.save("curriclum_ivan.pdf");
+
+               // });
+
+
+
+
+            }
+        })
+
+
+        }
+    </script>         
+</body>
+</html> 
+
